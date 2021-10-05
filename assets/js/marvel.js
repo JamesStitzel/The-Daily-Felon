@@ -15,24 +15,24 @@ var root = ""
 // 	console.error(err);
 // });
 
-fetch("https://gateway.marvel.com:443/v1/public/characters?apikey=15caa8edf45059befdb7f6fa1aea984d")
-.then(response => {
-	return response.json();
-})
-.then(data=>{
-  console.log(data);
-})
-.catch(err => {
-	console.error(err);
-});
+function getAPI(name, callback) {
+    fetch(
+      "https://gateway.marvel.com:443/v1/public/characters?&apikey=" + pubApiKey,
+      {
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        cache: "no-cache",
+      }
+    )
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        console.log(data);
+        callback(data);
+      });
+  }
 
-fetch("https://gateway.marvel.com/v1/public/characters?apikey=15caa8edf45059befdb7f6fa1aea984d")
-.then(response => {
-	return response.json();
-})
-.then(data=>{
-  console.log(data);
-})
-.catch(err => {
-	console.error(err);
-});
+  getAPI();
