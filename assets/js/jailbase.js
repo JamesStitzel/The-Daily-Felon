@@ -22,7 +22,6 @@ fetch("https://jailbase-jailbase.p.rapidapi.com/recent/?source_id=fl-alac", {
   criminal.mugshot = data.records[0].mugshot;
   criminal.crime = data.records[0].charges[0];
   criminal.location = data.jail.city;
-  console.log(criminal);
 })
 .catch(err => {
 	console.error(err);

@@ -15,7 +15,7 @@ var root = ""
 // 	console.error(err);
 // });
 
-fetch("https://gateway.marvel.com:443/v1/public/characters?apikey=15caa8edf45059befdb7f6fa1aea984d")
+fetch("https://gateway.marvel.com/v1/public/characters?apikey=15caa8edf45059befdb7f6fa1aea984d")
 .then(response => {
 	return response.json();
 })
