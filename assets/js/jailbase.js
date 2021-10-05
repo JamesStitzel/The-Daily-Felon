@@ -1,8 +1,8 @@
 var criminal = {
-   crimName,
-   crime,
-   location,
-   mugshot
+   crimName: "",
+   crime: "",
+   location: "",
+   mugshot: ""
 
 }
 
