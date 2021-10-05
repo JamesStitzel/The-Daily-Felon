@@ -1,33 +1,86 @@
+:root {
+--blue: rgb(0, 51, 102);
+--red: rgb(194, 0, 23);
+}
+
 * {
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: 15px;
 padding: 0%;
 margin: 0%;
 }
 
 header {
-    background-color: rgb(228, 27, 27);
-    line-height: 130px;
-    text-align: center;
+  border-top: 4px solid var(--blue);
+    height: 110px;
 }
+
+#upper-head {
+  text-align: left;
+  padding: 0px 0px 0px 250px;
+  margin: 0px;
+background-color: var(--red);
+}
+
+#lower-head {
+  margin: 0px;
+  background-color: white;
+}
+
+#logo {
+  float: left;
+  max-width: 100px;
+  margin: 10px;
+  border: 4px solid grey;
+  border-radius: 8px;
+}
+
 h1 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: whitesmoke;
-    font-size: 50px;
+    font-size: 40px;
 }
 h2 {
-    color: whitesmoke;
+    color: var(--red);
     font-size: 10px;
 }
 
 nav {
-    padding: 4px 0px 0px 0px;
-    color: whitesmoke;
-    background-color: rgb(9, 9, 173);
-    margin: 8
-     20px 0px 20px;
+text-align: right;
 }
+a {
+color: var(--blue);
+}
+#display-right {
+  float: right;
+}
+#input-surround {
+  padding: 10px;
+  margin: 10px 0px 0px 0px;
+}
+
+#above-input {
+  text-align: center;
+    padding: 0px;
+    color: whitesmoke;
+    background-color: var(--blue);
+    margin: 20px 20px 0px 20px;
+    max-width: 200px;
+}
+
+textarea {
+  float: left;
+  resize: none;
+}
+
+#bgWhite {
+  background-color: rgb(246, 248, 250);
+  margin: 0px;
+  padding: 0px;
+}
+
 main {
-    margin: 20px;
+    margin: 0px 100px 50px 100px;
 }
 p {
     margin: 20px;
@@ -40,7 +93,9 @@ p {
     justify-content: center
   }
 #img1 {
-    max-width: 100%
+  border: 4px solid var(--blue);
+  border-radius: 8px;
+  max-width: 450px;
   }
 #text1 {
     font-size: 20px;
@@ -52,7 +107,10 @@ p {
     justify-content: center
   }
 #img2 {
-    max-width: 100%
+  border: 4px solid var(--red);
+  border-radius: 8px;
+  max-width: 200px;
+  margin-bottom: 30px;
   }
 
 #text2 {
@@ -61,5 +119,7 @@ p {
   }
 
 footer {
-    margin: 20px;
+  font-size: 16px;
+  text-align: right;
+    margin: 0px 100px 0px 0px;
 }
