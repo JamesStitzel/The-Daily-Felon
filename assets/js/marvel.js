@@ -6,7 +6,7 @@ var root = ""
 var superHeroName;
 var superHeroPic;
 const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-var heroPic = $("#hero");
+var heroPic = document.querySelector("#hero");
 
 // fetch("https://gateway.marvel.com/v1/public/characters?apikey=" + pubApiKey + "&nameStartsWith=Spider&limit=20&ts=" + ts + "&hash=" + hash)
 // .then(response => {
@@ -37,7 +37,7 @@ function getAPI(callback) {
         console.log(data);
         const superHeroName = data.data.results[Math.floor(Math.random() * data.data.results.length)];
         console.log(superHeroName.name);
-        heroPic.attr("src", superHero.thumbnail.path + superHero.thumbnail.extension);
+        heroPic.setAttribute("src", superHero.thumbnail.path + superHero.thumbnail.extension);
         callback(data);
       });
   }
