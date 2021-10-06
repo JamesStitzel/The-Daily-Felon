@@ -35,8 +35,8 @@ function getAPI(callback) {
       })
       .then(function (data) {
         console.log(data);
-        const superHeroName = data.data.results[Math.floor(Math.random() * data.data.results.length)];
-        console.log(superHeroName.name);
+        const superHero = data.data.results[Math.floor(Math.random() * data.data.results.length)];
+        console.log(superHero.name);
         heroPic.setAttribute("src", superHero.thumbnail.path + superHero.thumbnail.extension);
         callback(data);
       });
