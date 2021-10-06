@@ -38,6 +38,7 @@ function getAPI() {
         console.log(data);
         superHero = data.data.results[Math.floor(Math.random() * data.data.results.length)];
         console.log(superHero.name);
+        superHeroName = superHero.name;
         heroPic.setAttribute("src", superHero.thumbnail.path + "." + superHero.thumbnail.extension);
       });
   }
