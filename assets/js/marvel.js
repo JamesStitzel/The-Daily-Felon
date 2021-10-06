@@ -40,7 +40,7 @@ function getAPI() {
         superHeroName = superHero.name;
         heroPic.setAttribute("src", superHero.thumbnail.path + "." + superHero.thumbnail.extension);
         console.log("-------" + superHeroName + "--------------");
-        myAlert(superHeroName);
+        callStories(superHeroName);
       });
   }
 
