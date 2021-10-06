@@ -44,4 +44,5 @@ function getAPI() {
   }
 
   getAPI();
-  myAlert();
+  console.log("-------" + superHeroName + "--------------";)
+  myAlert(superHeroName);
