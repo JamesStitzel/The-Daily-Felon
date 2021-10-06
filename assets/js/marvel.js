@@ -21,7 +21,7 @@ var heroPic = $("#hero");
 
 function getAPI(callback) {
     fetch(
-      "https://gateway.marvel.com:443/v1/public/characters?&apikey=" + pubApiKey + "limit=100&nameStartsWith=" + alphabet[Math.floor(Math.random() * alphabet.length)],
+      "https://gateway.marvel.com:443/v1/public/characters?&apikey=" + pubApiKey + "&limit=100&nameStartsWith=" + alphabet[Math.floor(Math.random() * alphabet.length)],
       {
         mode: "cors",
         headers: {
@@ -40,13 +40,6 @@ function getAPI(callback) {
         heroPic.attr("src", superhero.thumbnail.path + superhero.thumbnail.extension);
         callback(data);
       });
-    fetch("http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg?&apikey=" + pubApiKey).then(function(response){
-      return response.json();
-    })
-      .then(function(data){
-        console.log(data);
-        heroPic.attr("src", data);
-      })
   }
 
   getAPI();
