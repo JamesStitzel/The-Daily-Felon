@@ -1,3 +1,3 @@
 function myAlert(name){
-    alert(superHeroName);
+    alert(name);
 }
