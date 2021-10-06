@@ -36,7 +36,7 @@ function getAPI() {
       .then(function (data) {
         console.log("Updated at 11:35AM");
         console.log(data);
-        const superHero = data.data.results[Math.floor(Math.random() * data.data.results.length)];
+        superHero = data.data.results[Math.floor(Math.random() * data.data.results.length)];
         console.log(superHero.name);
         heroPic.setAttribute("src", superHero.thumbnail.path + "." + superHero.thumbnail.extension);
       });
