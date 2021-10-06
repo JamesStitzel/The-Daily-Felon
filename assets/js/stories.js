@@ -1,25 +1,55 @@
-function myAlert(name){
-    alert(name);
+var superName;
+function callStories(name){
+    superName = name;
+    tellStory();
+	
+// Each time the tell story function is called the page needs to be refreshed with new content from each of the arrays
+
+// When the story loads, the Jon's Garage articles should appear in the first column all the way to the left
+// The only functionality that will be needed for Jon's garage is just alternating the articles themselves, nothing inside the Jon's Gargage text will change
+
+// Crime articles should appear in the second column
+// The crime articles will have headlines that should populate from the articleHeadlines Array, headlines are random and do NOT need to be matched with a specific article
+// The article headlines do have words that need to be filled with random word selections from the applicable arrays
+// The articles contain placeholders throughout that needs to be filled with random word selections from the applicable arrays
+// There are two random number requests [R#] that need to be filled, these numbers will apply to previous crimes so the max window for that number selection is up to you
+// The Super Hero Name will need to be assigned to ensure that pictures match the names given  
+
+// Dan's Cooking Corner needs to appear in the third column
+// The only functionality that will be needed for Dan's Cooking Corner is just alternating the articles themselves, nothing inside the Cooking Corner text will change
+
+// Advertisements need to appear in the fourth and final column all the way to the right side
+
 }
 
 
-articleHeadlines = [							
+
+function tellStory(){
+    console.log("Our hero's name is " + superName);
+}
+
+
+
+
+// Article Headlines- can be chosen randomly- currently contains 10 items
+
+var articleHeadlines = [							
 
 	`Calling All…Superheroes?`,
-	`(villainDescriptiveName) Strikes Fear into the Heart of Citizens`,
-	`‘Chaos is on the Menu Today’ Says One Local Restaurant Owner`,
-	`(villainDescriptiveName) Leaves Devastation and Destruction After Going Grocery Shopping`,
-	`(superheroName) Promises Justice for Arch Nemesis (Villain Name)`,
-	`Public Enemy #1, (userInput) Apprehended`,
-	`(userInput): Mere Menace or Scourge on Society?`,
-	`Crime of the Century! (userInput) Wreaks Havoc and Ruin on (cityName)`,
-	`(cityName) Left in Shock After Receiving Estimate for Destruction Left by (userInput)`,
-	`(userInput) Left Police Bewildered, (superheroName) Asked to Step In`
+	[villainDescriptiveName] + ` Strikes Fear into the Heart of Citizens`,
+	`"Chaos is on the Menu Today" Says One Local Restaurant Owner`,
+	[villainDescriptiveName] + ` Leaves Devastation and Destruction After Going Grocery Shopping`,
+	[superheroName] + ` Promises Justice for Arch Nemesis ` + [villainName],
+	`Public Enemy #1, ` + [userInput] + ` Apprehended`,
+	[userInput] + `: Mere Menace or Scourge on Society?`,
+	`Crime of the Century! ` + [userInput] + ` Wreaks Havoc and Ruin on (cityName)`,
+	[cityName] + ` Left in Shock After Receiving Estimate for Destruction Left by ` + [userInput],
+	[userInput] + ` Left Police Bewildered, ` + (superheroName) + ` Asked to Step In`
 
 ]
 
-
-cityNames = [								
+// City Names - currently contains 12 items
+var cityNames = [								
 
 	`Bohemia, FL`,
 	`Dogtown, FL`,
@@ -36,8 +66,8 @@ cityNames = [
 
 ]
 
-
-sceneOfCrime = [							
+// Scene of the Crime locations - currently contains 11 items
+var sceneOfCrime = [							
 
 	`Bank`,
 	`Grocery Store`,
@@ -53,14 +83,14 @@ sceneOfCrime = [
 
 ]
 
-
-SecondaryStructures = [						
+// Secondary Structures that can be used for additional damage - currently contains 13 items
+var secondaryStructures = [						
 
 	`house`,
 	`parking garage`,
 	`ferris wheel`,
 	`miniature golf course`,
-	`car wash`
+	`car wash`,
 	`taxidermist`,
 	`Broken Action Figure Repair Clinic`,
 	`Rent-a-Chicken store`,
@@ -72,7 +102,8 @@ SecondaryStructures = [
 
 ]
 
-collateralDamage = [							
+// Collateral Damage-non structure objects that can receive damage -  currently contains 11 items
+var collateralDamage = [							
 
 	`hot dog stand`,
 	`newspaper stand`,
@@ -90,8 +121,8 @@ collateralDamage = [
 
 
 
-
-villainDescriptiveName = [						
+// Descriptive Name for Villain -  currently contains 10 items
+var villainDescriptiveName = [						
 
 	`Malicious Menace`,
 	`Captain Calamity`,
@@ -106,8 +137,8 @@ villainDescriptiveName = [
 ]
 
 
-
-modeOfTransportation = [						
+// Mode of transportation - currently contains 10 items
+var modeOfTransportation = [						
 
 	`mail truck`,
 	`city bus`,
@@ -122,7 +153,8 @@ modeOfTransportation = [
 
 ]
 
-currentCrime = [							
+// list of current crimes - currently contains 14 items
+var currentCrime = [							
 
 	`Burglary`,
 	`Armed Robbery`,
@@ -140,7 +172,8 @@ currentCrime = [
 	`HOA Infractions`
 ]
 
-pastCrimes = [								
+// list of past crimes - currently contains 14 items
+var pastCrimes = [								
 
 	`Airplane Hijacking`,
 	`Arson`,
@@ -160,8 +193,8 @@ pastCrimes = [
 
 ]
 
-
-Weapon = [								
+// list of weapons - currently contains 14 items
+var weapon = [								
 
 	`banjo`,
 	`pumpernickel bread`,
@@ -180,8 +213,8 @@ Weapon = [
 
 ]
 
-
-Disguise = [								
+// list of villain's disguises - currently contains 11 items
+var disguise = [								
 
 	`Banana Costume`,
 	`Buffalo Onesie`,
@@ -198,7 +231,8 @@ Disguise = [
 
 ]
 
-brokenBones = [			
+// List of bones for villain to break - currently contains 17 items
+var brokenBones = [			
 
 	`clavicle`,
 	`femur`,
@@ -222,8 +256,8 @@ brokenBones = [
 ]
 
 
-
-powersList = [								
+// List of super powers for the hero - currently contains 27 items
+var powersList = [								
 
 	`Psychokinesis`,
 	`Teleportation`,
@@ -256,8 +290,8 @@ powersList = [
 
 ]
 
-
-methodOfHeroEntry = [							
+// method of hero's entry - currently contains 16 items
+var methodOfHeroEntry = [							
 
 	`flew`,
 	`swung`,
@@ -279,7 +313,8 @@ methodOfHeroEntry = [
 
 ]
 
-attackWords = [								
+// list of attack words - currently contains 7 items
+var attackWords = [								
 
 	`attacked`,
 	`ambushed`,
@@ -291,8 +326,8 @@ attackWords = [
 
 ]
 
-
-typesOfAttacks = [								
+// list of types of attacks- currently contains 8 items
+var typesOfAttacks = [								
 
 	`hit`,
 	`kick`,
@@ -305,8 +340,8 @@ typesOfAttacks = [
 
 ]
 
-
-breakWords = [								
+// list of break words - currently contains 20 items
+var breakWords = [								
 
 	`brake`,
 	`shatter`,
@@ -316,7 +351,7 @@ breakWords = [
 	`splinter`,
 	`smash`,
 	`ruptur`,
-	`separat`,
+	`separate`,
 	`severe`,
 	`snap`,
 	`tear`,
@@ -331,7 +366,8 @@ breakWords = [
 
 ]
 
-villainQuotes = [								
+// List of quotes for the villain to say - currently contains 12 items
+var villainQuotes = [								
 
 	`I would have gotten away with it if it wasn’t for those meddling kids!`,
 	`She doesn’t even go here!`,
@@ -350,8 +386,8 @@ villainQuotes = [
 
 ]
 
-
-heroRemarks = [								
+// list of remarks for hero to say - currently contains 10 items
+var heroRemarks = [								
 
 	`Sell crazy someplace else. We’re all stocked up here.`,
 	`Why don’t you make like a tree and get out of here?`,
@@ -368,8 +404,8 @@ heroRemarks = [
 
 ]
 
-
-typeOfMechanicalIssue = [							
+// list of types of mechanical issues - currently contains 18 items
+var typeOfMechanicalIssue = [							
 
 	`Blinker Fluid`,
 	`Battery Belt`,
@@ -392,7 +428,8 @@ typeOfMechanicalIssue = [
 
 ]
 
-articles = {
+// Articles - there are only two articles but each article needs to be populated with words from applicable arrays
+var articles = {
     articleOne :
     `This morning citizens in the town of ` + [cityName] + ` were left reeling after the latest infraction by the ` + [villainDescriptiveName] + `. The villain better known as ` + [userInput] + `, had once again brought chaos and destruction through the heinous act of ` + [currentCrime] + `.
 
@@ -410,21 +447,20 @@ articles = {
 
     articleTwo :
     `Last night an explosion was reported near the old ` + [sceneOfCrime] + ` that was located at the edge of ` + [cityName] + `. The surrounding landscape was nearly leveled including the brand new ` + [secondaryStructures] + ` and the well-loved ` + [collateralDamage] + ` that was located across the street.
-
-A person dressed in a ` + [disguise] + ` was seen leaving the scene in a `+ [modeOfTransportation] + `. witnesses said that the vehicle was very loud due to, what many believe was a ` + [mechanicalIssue] + `.
-
-Before police could arrive, neighborhood hero ` + [superheroName]  + `had already ` + [methodOfEntry] + ` onto the scene. Among the rubble ` + [superheroName] + ` found a ` + [weapon] + ` which was immediately sent to the forensics lab for analysis.
-
-For our readers who are just joining, the ` + [weapon] + ` is the weapon of choice for the ` + [villainDescriptiveName] + ` better known as ` + [userInput] + `. ` + [userInput] + ` has previously been charged with four counts of ` + [pastCrime] + ` and seven counts of ` + [pastCrime] + `. Earlier this week, a federal
-judge issued a warrant for ` + [userInput] + `'s arrest on the charge of ` + [currentCrime] + `.
-
-`+ [superhero] + ` vowed to use the awe inspiring ability of ` + [powersList] + ` to ` + [typesOfAttack] + ` and ` + [breakWords] + ` as many of `+ [userInput] + `'s ` + [bones] + ` as possible.
-
-` + [superhero] + ` spoke to reporters and made his thoughts clear when he said: "` + [heroRemarks] + `”
-
-We reached out to ` + [userInput] + ` and received a single response stating: "` + [villainQuotes] + `”
-
-This story is still developing and will be updated as it unfolds.`
+	
+	A person dressed in a ` + [disguise] + ` was seen leaving the scene in a `+ [modeOfTransportation] + `. witnesses said that the vehicle was very loud due to, what many believe was a ` + [mechanicalIssue] + `.
+	
+	Before police could arrive, neighborhood hero ` + [superheroName]  + `had already ` + [methodOfEntry] + ` onto the scene. Among the rubble ` + [superheroName] + ` found a ` + [weapon] + ` which was immediately sent to the forensics lab for analysis.
+	
+	For our readers who are just joining, the ` + [weapon] + ` is the weapon of choice for the ` + [villainDescriptiveName] + ` better known as ` + [userInput] + `. ` + [userInput] + ` has previously been charged with four counts of ` + [pastCrime] + ` and seven counts of ` + [pastCrime] + `. Earlier this week, a federal judge issued a warrant for ` + [userInput] + `'s arrest on the charge of ` + [currentCrime] + `.
+	
+	`+ [superhero] + ` vowed to use the awe inspiring ability of ` + [powersList] + ` to ` + [typesOfAttack] + ` and ` + [breakWords] + ` as many of `+ [userInput] + `'s ` + [bones] + ` as possible.
+	
+	` + [superhero] + ` spoke to reporters and made his thoughts clear when he said: "` + [heroRemarks] + `”
+	
+	We reached out to ` + [userInput] + ` and received a single response stating: "` + [villainQuotes] + `”
+	
+	This story is still developing and will be updated as it unfolds.`
 
 
 }
@@ -432,8 +468,9 @@ This story is still developing and will be updated as it unfolds.`
 
 
 
-
-dansCookingCorner = [
+// Dan's Cooking Corner needs to appear in the third column. articles need to be displayed randomly, nothing inside the text should have to change
+// Total number of articles will be updated once complete
+var dansCookingCorner = [
     `We've had such lovely weather lately, now is the best time to make one of my favorites.
 
     Today we will be making the delicious "Bologna cake". This recipe has been requested by many of our followers, so we are finally bringing this crowd favorite to your home!
@@ -455,7 +492,9 @@ dansCookingCorner = [
 ]
 
 
-jonsGarage = [
+// Jon's Garage needs to appear in the third column. articles need to be displayed randomly, nothing inside the text should have to change
+// Total number of articles will be updated once complete
+var jonsGarage = [
     `With all the dreadful weather we've been having lately, now is a great time to remember to top off your blinker fluid.
 
     This is a very simple fix that can potentially save you lots of trouble later on down the road. 
