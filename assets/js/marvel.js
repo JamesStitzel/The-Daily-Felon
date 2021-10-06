@@ -19,7 +19,7 @@ var heroPic = document.querySelector("#hero");
 // 	console.error(err);
 // });
 
-function getAPI(callback) {
+function getAPI() {
     fetch(
       "https://gateway.marvel.com:443/v1/public/characters?&apikey=" + pubApiKey + "&limit=100&nameStartsWith=" + alphabet[Math.floor(Math.random() * alphabet.length)],
       {
@@ -34,12 +34,11 @@ function getAPI(callback) {
         return response.json();
       })
       .then(function (data) {
-        console.log("Updated at 11:30AM");
+        console.log("Updated at 11:35AM");
         console.log(data);
         const superHero = data.data.results[Math.floor(Math.random() * data.data.results.length)];
         console.log(superHero.name);
-        heroPic.setAttribute("src", superHero.thumbnail.path + superHero.thumbnail.extension);
-        callback(data);
+        heroPic.setAttribute("src", superHero.thumbnail.path + "." + superHero.thumbnail.extension);
       });
   }
 
