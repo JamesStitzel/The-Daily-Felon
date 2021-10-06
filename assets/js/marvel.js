@@ -34,6 +34,7 @@ function getAPI(callback) {
         return response.json();
       })
       .then(function (data) {
+        console.log("Updated at 11:30AM");
         console.log(data);
         const superHero = data.data.results[Math.floor(Math.random() * data.data.results.length)];
         console.log(superHero.name);
