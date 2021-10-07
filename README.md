@@ -44,6 +44,6 @@ In our DEEP and EXTREMELY PROFESSIONAL research this perfect combination of suga
 
 ## Contributions
 - Kyle Sousa : Integrated Jail Base API and Marvel API, wrote basically all the JS
-- Mohamed Lazrek : Layed out entire webpage with CSS/Foundations, designed page to look like a real newspaper
+- Mohamed Lazrek : Layed out entire webpage with CSS/Foundations, designed page to look like a real newspaper, added introduction animation
 - Fenix Sampson : Wrote all articles, made all variables arrays for randomized articles, had the idea for Dans cooking corner
 - James Stitzel : Layed basic HTML and CSS, created fake advertisments, wrote ReadMe
