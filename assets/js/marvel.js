@@ -3,7 +3,7 @@ var root = ""
 var superHeroName;
 var superHeroPic;
 const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-var heroPic = document.querySelector("#heroPic");
+var heroPic = document.querySelector("#hero Pic");
 
 // fetch("https://gateway.marvel.com/v1/public/characters?apikey=" + pubApiKey + "&nameStartsWith=Spider&limit=20&ts=" + ts + "&hash=" + hash)
 // .then(response => {
@@ -37,7 +37,7 @@ function getMarvelAPI() {
         superHeroName = superHero.name;
         heroPic.setAttribute("src", superHero.thumbnail.path + "." + superHero.thumbnail.extension);
         console.log("-------" + superHeroName + "--------------");
-        callStories("Poggies");
+        callStories();
 
       });
   }

@@ -418,11 +418,11 @@ var typeOfMechanicalIssueArray = [
 
 ]
 var headlines;
-headlines = document.getElementsByClassName('title');
+headlines = document.getElementById('superTitle');
 inputField = document.getElementById('beau');
 searchBtn = document.getElementById('button');
-function callStories(name){
-    superheroName = name;
+superArticle = document.getElementById('superArticle');
+function callStories(){
     chooseVariables();
 	
 // Each time the tell story function is called the page needs to be refreshed with new content from each of the arrays
@@ -497,8 +497,8 @@ function chooseVariables(){
     console.log("hello");
 
 
-    var articles = {
-        articleOne :
+    var articles = [
+        articleOne =
         `This morning citizens in the town of ` + cityName + ` were left reeling after the latest infraction by the ` + villainDescriptiveName + `. The villain better known as ` + userInput + `, had once again brought chaos and destruction through the heinous act of ` + currentCrime + `.
     
         ` + userInput + ` was at the regional ` + sceneOfCrime +  ` and was reported to be wearing a ` + disguise + ` and wielding a ` + weapon + `. For readers just joining us, ` + userInput + ` has been found guilty and charged by the state for ` + R1 + ` counts of ` + pastCrimes1 + `, as well as ` + R2 + `counts of ` + pastCrimes2 + `. Last month the federal judge issued a warrant for ` + userInput + `'s arrest.
@@ -513,7 +513,7 @@ function chooseVariables(){
         
         The town of ` + cityName + ` is once again safe thanks to ` + superheroName + `. When asked if he had anything to say to ` + userInput + `, ` + superheroName + ` responded by saying ` + herosRemarks + `.`,
     
-        articleTwo :
+        articleTwo =
         `Last night an explosion was reported near the old ` + sceneOfCrime + ` that was located at the edge of ` + cityName + `. The surrounding landscape was nearly leveled including the brand new ` + secondaryStructure + ` and the well-loved ` + collateralDamage + ` that was located across the street.
         
         A person dressed in a ` + disguise + ` was seen leaving the scene in a `+ modeOfTransportation + `. witnesses said that the vehicle was very loud due to, what many believe was a ` + mechanicalIssue + `.
@@ -529,16 +529,13 @@ function chooseVariables(){
         We reached out to ` + userInput + ` and received a single response stating: "` + villainQuotes + `”
         
         This story is still developing and will be updated as it unfolds.`
-    }
+	]
 
-    const shuffled = articleHeadlines.sort(() => 0.5 - Math.random());
 
     // Get sub-array of first n elements after shuffled
-    articleHeadlines = shuffled.slice(0, 3);
-    console.log("Hello?");
-    headlines[1].innerHTML = articleHeadlines[0];
-    headlines[2].innerHTML = articleHeadlines[1];
-    headlines[3].innerHTML = articleHeadlines[2];
+    headlines.innerHTML = articleHeadlines[Math.floor(Math.random() * articleHeadlines.length)];
+
+	superArticle.innerHTML = articles[Math.floor(Math.random() * articles.length)];
     
 }
 
