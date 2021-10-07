@@ -6,7 +6,7 @@ var root = ""
 var superHeroName;
 var superHeroPic;
 const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-var heroPic = $("#hero");
+var heroPic = document.querySelector("#hero");
 
 // fetch("https://gateway.marvel.com/v1/public/characters?apikey=" + pubApiKey + "&nameStartsWith=Spider&limit=20&ts=" + ts + "&hash=" + hash)
 // .then(response => {
@@ -19,7 +19,7 @@ var heroPic = $("#hero");
 // 	console.error(err);
 // });
 
-function getAPI(callback) {
+function getAPI() {
     fetch(
       "https://gateway.marvel.com:443/v1/public/characters?&apikey=" + pubApiKey + "&limit=100&nameStartsWith=" + alphabet[Math.floor(Math.random() * alphabet.length)],
       {
@@ -34,11 +34,13 @@ function getAPI(callback) {
         return response.json();
       })
       .then(function (data) {
+        console.log("Updated at 1:38PM");
         console.log(data);
-        const superHeroName = data.data.results[Math.floor(Math.random() * data.data.results.length)];
-        console.log(superHeroName.name);
-        heroPic.attr("src", superhero.thumbnail.path + superhero.thumbnail.extension);
-        callback(data);
+        superHero = data.data.results[Math.floor(Math.random() * data.data.results.length)];
+        superHeroName = superHero.name;
+        heroPic.setAttribute("src", superHero.thumbnail.path + "." + superHero.thumbnail.extension);
+        console.log("-------" + superHeroName + "--------------");
+        // callStories(superHeroName);
       });
   }
 
