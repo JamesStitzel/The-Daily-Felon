@@ -6,7 +6,7 @@ var criminal = {
 
 }
 
-villainPic = document.getElementById('villainPic');
+villainPic = document.getElementById('villain Pic');
 var sources = ['fl-alac', 'fl-bcso', 'fl-bso', 'fl-chso', 'fl-dcso', 'fl-fcso', 'fl-gcso', 'fl-jso', 'fl-lcso', 'id-acso', 'id-tfcso', 'il-wcso'
 ]
 
@@ -37,7 +37,8 @@ function begin(){
   villainPic.setAttribute("src", criminal.mugshot);
   criminal.crime = data.records[crimNum].charges[0];
   criminal.location = data.jail.city;
-  getMarvelAPI();
+  // getMarvelAPI();
+  callStories();
 })
 .catch(err => {
 	console.error(err);
