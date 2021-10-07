@@ -1,12 +1,9 @@
 var pubApiKey = "15caa8edf45059befdb7f6fa1aea984d";
-var secApiKey = "ec2305142171c3be6a800b3d04739a038f8ab00a";
-var ts = new Date().getTime();
-var hash = ts + secApiKey + pubApiKey;
 var root = ""
 var superHeroName;
 var superHeroPic;
 const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-var heroPic = document.querySelector("#hero");
+var heroPic = document.querySelector("#heroPic");
 
 // fetch("https://gateway.marvel.com/v1/public/characters?apikey=" + pubApiKey + "&nameStartsWith=Spider&limit=20&ts=" + ts + "&hash=" + hash)
 // .then(response => {
@@ -19,7 +16,7 @@ var heroPic = document.querySelector("#hero");
 // 	console.error(err);
 // });
 
-function getAPI() {
+function getMarvelAPI() {
     fetch(
       "https://gateway.marvel.com:443/v1/public/characters?&apikey=" + pubApiKey + "&limit=100&nameStartsWith=" + alphabet[Math.floor(Math.random() * alphabet.length)],
       {
@@ -36,12 +33,12 @@ function getAPI() {
       .then(function (data) {
         console.log("Updated at 1:38PM");
         console.log(data);
-        superHero = data.data.results[Math.floor(Math.random() * data.data.results.length)];
+        var superHero = data.data.results[Math.floor(Math.random() * data.data.results.length)];
         superHeroName = superHero.name;
         heroPic.setAttribute("src", superHero.thumbnail.path + "." + superHero.thumbnail.extension);
         console.log("-------" + superHeroName + "--------------");
-        // callStories(superHeroName);
+        callStories("Poggies");
+
       });
   }
 
-  getAPI();
