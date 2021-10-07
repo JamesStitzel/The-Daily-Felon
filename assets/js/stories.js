@@ -1,4 +1,3 @@
-var superheroName = "Kyle";
 var dansCookingCorner = [
     `We've had such lovely weather lately, now is the best time to make one of my favorites.
 
@@ -418,10 +417,11 @@ var typeOfMechanicalIssueArray = [
 	`transmission spoiler`
 
 ]
-callStories("Poggies");
 var headlines;
+headlines = document.getElementsByClassName('title');
+inputField = document.getElementById('beau');
+searchBtn = document.getElementById('button');
 function callStories(name){
-    headlines = document.getElementsByClassName('title');
     superheroName = name;
     chooseVariables();
 	
@@ -445,11 +445,17 @@ function callStories(name){
 }
 
 function chooseVariables(){
+	superheroName = superHeroName;
     villainDescriptiveName = villainDescriptiveNameArray[Math.floor(Math.random() * villainDescriptiveNameArray.length)];
-    villainName = "Beau";
-    userInput = "Beau";
-    R1 = 69;
-    R2 = 420;
+	if(inputField.innerHTML == ""){
+		userInput = criminal.crimName;
+	}
+	else{
+		userInput = inputField.innerHTML;
+	}
+    
+    R1 = Math.floor(Math.random() * 100 + 1);
+    R2 = Math.floor(Math.random() * 100 + 1);
     cityName = cityNamesArray[Math.floor(Math.random() * cityNamesArray.length)];
     sceneOfCrime = sceneOfCrimeArray[Math.floor(Math.random() * sceneOfCrimeArray.length)];
     disguise = disguiseArray[Math.floor(Math.random() * disguiseArray.length)];
@@ -479,7 +485,7 @@ function chooseVariables(){
         [villainDescriptiveName] + ` Strikes Fear into the Heart of Citizens`,
         `"Chaos is on the Menu Today" Says One Local Restaurant Owner`,
         [villainDescriptiveName] + ` Leaves Devastation and Destruction After Going Grocery Shopping`,
-        [superheroName] + ` Promises Justice for Arch Nemesis ` + [villainName],
+        [superheroName] + ` Promises Justice for Arch Nemesis ` + userInput,
         `Public Enemy #1, ` + [userInput] + ` Apprehended`,
         [userInput] + `: Mere Menace or Scourge on Society?`,
         `Crime of the Century! ` + [userInput] + ` Wreaks Havoc and Ruin on (cityName)`,
@@ -535,6 +541,10 @@ function chooseVariables(){
     headlines[3].innerHTML = articleHeadlines[2];
     
 }
+
+searchBtn.addEventListener("click", function(){
+
+})
 
 
 // Dan's Cooking Corner needs to appear in the third column. articles need to be displayed randomly, nothing inside the text should have to change
