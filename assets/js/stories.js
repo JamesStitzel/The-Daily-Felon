@@ -606,6 +606,8 @@ headlines = document.getElementById('superTitle');
 inputField = document.getElementById('beau');
 searchBtn = document.getElementById('button');
 superArticle = document.getElementById('superArticle');
+danArticle = document.getElementById('danCook');
+johnArticle = document.getElementById('johnGarage');
 function callStories(){
     chooseVariables();
 	
@@ -720,6 +722,8 @@ function chooseVariables(){
     headlines.innerHTML = articleHeadlines[Math.floor(Math.random() * articleHeadlines.length)];
 
 	superArticle.innerHTML = articles[Math.floor(Math.random() * articles.length)];
+	danArticle.innerHTML = dansCookingCorner[Math.floor(Math.random() * dansCookingCorner.length)]
+	johnArticle.innerHTML = jonsGarage[Math.floor(Math.random() * jonsGarage.length)]
     
 }
 
