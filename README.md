@@ -32,6 +32,7 @@ In our DEEP and EXTREMELY PROFESSIONAL research this perfect combination of suga
 - I think we all have a new appreciation of the work superheros do
 - We improved our overall capabilities with API's
 - Our team mangement skills were fleshed out quite a bit more
+- Improved general design skills
 - I mean gosh golly we just had a good time
 
 ## Features
@@ -40,3 +41,9 @@ In our DEEP and EXTREMELY PROFESSIONAL research this perfect combination of suga
 - SuperHeroes!
 - Mugshots!
 - Crime! *(The secret ingredient)*
+
+## Contributions
+- Kyle Sousa : Integrated Jail Base API and Marvel API, wrote basically all the JS
+- Mohamed Lazrek : Layed out entire webpage with CSS/Foundations, designed page to look like a real newspaper
+- Fenix Sampson : Wrote all articles, made all variables arrays for randomized articles, had the idea for Dans cooking corner
+- James Stitzel : Layed basic HTML and CSS, created fake advertisments, wrote ReadMe
