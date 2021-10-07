@@ -1,4 +1,8 @@
+// Dan's Cooking Corner needs to appear in the third column. articles need to be displayed randomly, nothing inside the text should have to change
+// Total of 6 Articles for Cooking Corner
 var dansCookingCorner = [
+
+	// Cooking Corner Article 1 - Bologna Cake
     `We've had such lovely weather lately, now is the best time to make one of my favorites.
 
     Today we will be making the delicious "Bologna cake". This recipe has been requested by many of our followers, so we are finally bringing this crowd favorite to your home!
@@ -16,12 +20,90 @@ var dansCookingCorner = [
     
     This is one of my personal favorites, so I hope you enjoy it as much as I do!`,
 
+	
+	// Cooking Corner Article 2 - Doritos Cereal
+	`There are a lot of breakfast options these days.
+
+	The next time you’re at the store, take a look at the cereal isle and you're sure to find a staggering variety to choose from.
+	
+	The problem with all these cereal options is that most of them are filled with sugar and empty calories. Medical science has shown that that much sugar can be detrimental to one's health.
+	
+	That's why for years I've been making my own breakfast cereal. It's simple and delicious, and with only 30 seconds needed for prep time, what else could you ask for?
+	
+	All you do is take one large bag of Doritos Nacho Cheese chips, crush them into tiny pieces and pour into a bowl. What could be easier than that?
+	
+	For an extra healthy option. I recommend pouring Mountain Dew across the top instead of milk. That way you can have breakfast and your morning "pick me up" at the same time.
+	
+	This is a great one for moms, dads and kids of all ages. So grab a spoon and enjoy a bowl today!`,
+
+
+	// Cooking Corner Article 3 - Banana and Mayonaise Sandwich
+	`Someone once told me that the days of fixing bagged lunches for school or work was over. I disagree. 
+
+	Studies now show that packing your lunch is more popular today than ever before.  Research has found that when people pack their lunches they end up having better days overall. Since it seems to be beneficial on multiple levels, I figured that today I should give you a delicious little recipe that I enjoy fixing for my own lunches.
+	
+	Banana and mayonnaise sandwiches are a classic favorite. Any grandmother will tell you that you would be hard pressed to find two better superfoods to combine together.
+	
+	The bananas are an excellent source of potassium and the mayonnaise aids indigestion. What more could you ask for?
+	
+	The recipe is simple. 2 slices of bread covered in a generous layer of your favorite mayonnaise. Take 2 whole bananas, not sliced, and place between the two bread slices. Serve with red pepper slices.
+	
+	Simple. Easy. Delicious. Enjoy!`,
+
+
+	// Cooking Corner Article 4 - Sour Cream Ground Beef
+	`The recipe I'm bringing you today comes from my neighbor's homeland of Alabama. I had my doubts at first, but one bite was all that it to convince me to add it to my favorites list.
+
+	Sour Cream Ground Beef is considered a delicacy to many people out there. If you've never tried it then today is your lucky day because I'm about to teach you how to make this delicious meal.
+	
+	Take one pound of raw ground beef and thoroughly mix with hearty scoops of sour cream until the beef is completely covered.
+	
+	Cook on medium heat for 20 minutes. While that's cooking prepare mixture of cream cheese, dill need and one cap of milk.
+	
+	Place bed of uncooked rigatoni on serving dish. Sour cream beef log is placed in the center. Dill flavored cream cheese is drizzled across the top. Serve chilled.
+	
+	This dish is sure to become your next favorite!
+	
+	Bon Appétit!`,
+
+
+	// Cooking Corner Article 5 - Pureed Avocado Spaghetti
+	`Sometimes you have those days where all you want to do is snuggle up under a thick blanket and enjoy see delicious comfort food.
+
+	When I have days that I'm feeling under the weather like that I have one classic recipe that I always turn to. when I was a young child, anytime I got sick my mother would always fix me a giant bowl of Pureed Avocado spaghetti.
+	
+	She would fix just normal ordinary spaghetti, then add a huge glob of sour cream, when that was finished cooking, she would pour it into a blender with two whole Avocados. It was all pureed to a liquid and served in a giant cup and straw
+	
+	As I've gotten older and wiser, I've learned about all the health benefits of citrus so now that I'm grown and fix my own, I usually add a whole orange and a whole grapefruit to the mix be for blending.
+	
+	This recipe never fails to lift my body and soul. The next time you feel under the weather, I hope this dish will make you feel right as rain.
+	`,
+
+
+	// Cooking Corner Article 6 - Jellied Bouillon with Frankfurters
+	`Any sunny summer afternoon is made better by a festive snack. I find that heat is made bearable with this cool refreshing treat.
+
+	Today I'm bringing you one of my brother's favorites that he use to beg for relentlessly. Today we will be making Jellied bouillon with Frankfurters.
+	
+	While this dish is relatively easy to make it does required some cooling time in the fridge so be sure to start it early in the day.
+	
+	For this one you will need to dissolve unflavored gelatin in hot beef broth. In a decorative gelatin mold, place diced celery, slices of hardboiled eggs. You will want to add in moderate sized pieces of hotdogs and various sausages.
+	
+	The last step will be to pour the beef Jell-O mixture into the mold also. Place in the fridge and chill until firm. This dish is best served with strawberries and maple syrup.
+	
+	Hope this keeps you from melting away on a hot day!"`,
+
+
+
 
 ]
 
-// Jon's Garage needs to appear in the third column. articles need to be displayed randomly, nothing inside the text should have to change
-// Total number of articles will be updated once complete
+
+// Garage needs to appear in the first column. articles need to be displayed randomly, nothing inside the text should have to change
+// Total of 7 Garage articles
 var jonsGarage = [
+
+	// Garage Article 1 - Blinker Fluid
     `With all the dreadful weather we've been having lately, now is a great time to remember to top off your blinker fluid.
 
     This is a very simple fix that can potentially save you lots of trouble later on down the road. 
@@ -37,7 +119,109 @@ var jonsGarage = [
     
     "Happy Blinking!"
     `,
+
+
+	// Garage Article 2 - Battery Belt
+	`Most people aren't aware of this but most modern car batteries actually have a small generator built into them to keep them charged. Older style batteries were prone to getting drained and dying randomly. 
+
+	Often this would happen at the worst times possible, usually at night or in the severe heat or cold.
+	
+	The battery industry made a huge advancement forward when they added the internal generator. The addition has helped the newer design of batteries have a longer charge life. They are also far more reliable than previous designs.
+	
+	While the batteries are becoming more durable and dependable over time, they are far from perfect. As an example, the generator charges the battery via a small belt that runs between the two.
+	
+	That belt is prone to wear and tear. In order to prevent being stranded, I recommend that you change your battery belt every 1000 miles. That will ensure that your battery is operating at peak efficiency.
+	It’s a simple repair also. However, unless you have a full-service automotive center in your home garage, you are going to want to take your car to a professional mechanic. They can usually have the job completed in just a few minutes.
+	
+	This small fix now can save you lots of stress and heartache in the future. Don’t abandon your battery belt and it won’t abandon you on the side of the road!`,
+
+
+	// Garage Article 3 - Magnetic Fuel Alignment System
+	`You know how sometimes you’re driving down the road and your car starts seeming a little sluggish? Sometimes it may even be accompanied by a repetitive clanking sound underneath the body.
+
+	These are normal signs that your Magnetic Fuel Alignment System needs calibration. 
+	
+	The Magnetic Fuel Alignment System is one of the most important parts of the fuel system. In some ways, you could say that it's almost more important than the fuel itself.
+	
+	This is a fairly simple system that serves a major function. Essentially it uses magnets to keep the fuel aligned while it is inside the main system.
+	
+	The sluggish response of the vehicle is from the fuel rubbing and creating friction inside the fuel lines. The Magnetic Fuel Alignment System Keeps the fuel aligned in such a way as to limit or fully negate the friction that occurs when the fuel is moving across the interior of the fuel line.
+	
+	Keeping your magnetic Fuel Alignment System properly serviced and maintained will help ensure smoother functioning on a regular basis. Some studies are also showing that a properly maintained Magnetic Fuel Alignment System can help get better gas mileage, and who wouldn't want that?
+	
+	I recommend making an appointment with your favorite mechanic for a check-up before your vehicle's performance starts diminishing.
+	
+	Remember the old saying: "A happy Magnetic Fuel Alignment system is a happy driver!"`,
+
+
+	// Garage Article 4 - Brake Coolant 
+	`Have you already made your holiday travel plans? If you are anything like me, I like to head to the mountains during this festive time of year.
+
+	In my opinion there's nothing more relaxing and pleasant than the wide-open spaces and unending fresh air. Once you drive all the way to the summit it's so instantly addicting that you never want to leave.
+	
+	It never fails that you do eventually have to descend from your mountain haven and when you do, that's when your car must pay the price.
+	
+	That steep descent can wreak havoc on your breaks. The constant heat buildup can cause them to crystallize and once that happens it doesn’t take much for them to become extremely fragile and shatter easily. A car with shattered breaks is the same thing as a snow shed, the only thing stopping you is a tree at the bottom of the descent- The same thing can happen after constant breaking in stop and go traffic in a city.
+	
+	To prevent that, all cars built after 2004 are required to have a break coolant system installed. This system completely solves that problem. It keeps the brakes within a safe operating temperature and ultimately prevents them from becoming crystals.
+	
+	Like with any coolant, the typical brake coolant fluid can only hold so much heat before it needs to be replaced. Any garage that offers oil changes or break repairs should be able to address this problem when you go in for your next inspection.
+	
+	For your safety and those around you, I recommend keeping a close eye on your brake coolant levels. Your brakes will be grateful and so will your insurance company!
+	
+	Safe stopping!`,
+
+
+	// Garage Article 5 - Piston Springs
+	`Today we are going to talk a little bit about how an internal combustion actually works.
+
+	The fuel is pumped from the gas tank up into the cylinders. Once there the fuel is ignited by the spark plugs causing a small explosion. The force of the explosion pushes the piston down to the bottom of the cylinder which rotates the drive shaft a portion of a turn.
+	
+	Many of these tiny explosions and rotations are happening every second which is what turns the wheels and moves the car forward.
+	
+	Here's the important part that no one ever thinks about, underneath the pistons are springs that push the pistons back up into their reset starting positions. If these springs become faulty or fail, then it can have tragic outcomes for the engine.
+	
+	If the springs don't push the pistons back into their starting positions, then there is nothing to react to the explosion of the fuel. If the pistons aren't there to react then the combustion can damage the walls of the cylinder.
+	
+	This is why it's so important to make sure the piston springs are of a good quality and in perfect functioning order.
+	
+	No one wants to be stranded on the side of the road due to faulty piston springs. This is a bit of a time-consuming repair but it's definitely worth it in the long run. 
+	
+	If you haven't had them checked recently, you may want to schedule a check-up soon before you do find yourself broke down somewhere.`,
+
+
+	// Garage Article 6 - Windshield Wiper Governor
+	`Every year around this time we go into the rainy season. we all know that with-the rain comes the need for new windshield wipers • One aspect that is often overlooked however, is the windshield wiper governor.
+
+	This simple device is what adjusts the speed of the wipers across the windshield. Without a functioning windshield wiper governor, the wipers are stuck going super slow. That speed may be fine for sitting stationary in a light misting sprinkle but try to drive that same car on an interstate during a thunderstorm and you'll find the task nearly impossible.
+	
+	It's important to make sure your windshield wiper governor is in proper working order. It has been suggested that it should be replaced once every 3000 miles.
+	
+	My experience has taught me however that once every 1500 miles is a much better mileage to remember to have it replaced. I find that the majority of the windshield wiper governors that are on the market today tend to fail far faster than the recommended 3000 miles.
+	
+	I've been blinded by the rain often enough that I never fail to change my windshield wiper governor every 1500 miles.
+	
+	The repair will normally cost somewhere around $25-$35 and shouldn't take more than a few minutes to switch out.
+	
+	This small and often overlooked repair is so vital to safe operation of the car that I highly encourage you to add it to the top of your automotive to-do list.`,
+
+
+	// Garage Article 7 - Battery Filter
+	`One common misconception is that battery acid is only good for so long and then the entire battery needs to be replaced. That belief is actually incorrect.
+
+	Every battery that is currently produced in the U.S. is required to have a filter installed in it. This filter extends the life of the battery tremendously.
+	
+	As a battery discharges its electricity, there is a residue that builds up in the battery acid. over the that residue can clog the internal pathways of the battery causing the battery to cease to function.
+	
+	The development of the battery filter provided a quick and easy way to keep your battery acid clean and free of residue. 
+	
+	Most of the time, the filter is mounted underneath the battery, however it's not uncommon to also find it on the side from the to time. The filter is only about a half inch wide but it's vitally important to the longevity of the battery. The filter is a tiny piece of metal that acts kind of like a magnet for the debris. The residue is attracted to the piece of metal where it can collect safely and be prevented from harming the battery.
+	
+	I recommend that you replace your battery filter every time you go in for a tune up. It has been shown countless times that a properly maintained battery filter can help a battery last for several decades.
+	
+	Think of all the money you may have been wasting by buying new batteries each time. A little care and maintenance now can definitely be worth it down the road.`,
 ]
+
 
 var cityNamesArray = [								
 
@@ -544,5 +728,3 @@ searchBtn.addEventListener("click", function(){
 })
 
 
-// Dan's Cooking Corner needs to appear in the third column. articles need to be displayed randomly, nothing inside the text should have to change
-// Total number of articles will be updated once complete
