@@ -614,7 +614,7 @@ johnArticle = document.getElementById('johnGarage');
 ad1 = document.getElementById('ad1');
 ad2 = document.getElementById('ad2');
 ad3 = document.getElementById('ad3');
-picLinks = ['bill.png', 'diabetus.png', 'Durahell.png', 'oil.png', 'pepsi.png', 'robomaid.png', 'T&T&T&T.png', 'vw.png', 'wallblues.png', 'well go f urself.png', 'WSBank.png', 'wsi.png', 'zfinity.png'];
+picLinks = ['pepsi.png', 'robomaid.png', 'T&T&T&T.png', 'vw.png', 'WSBank.png', 'wsi.png', 'zfinity.png', 'dan is rat.png'];
 path = './assets/images/';
 shuffle(picLinks);
 ad1.setAttribute("src", path + picLinks[0]);
