@@ -617,9 +617,9 @@ ad3 = document.getElementById('ad3');
 picLinks = ['bill.png', 'diabetus.png', 'durahell.png', 'oil.png', 'pepsi.png', 'robomaid.png', 'T&T&T&T.png', 'vw.png', 'wallblues.png', 'well go f usrself.png', 'WSBank.png', 'wsi.png', 'zfinity.png'];
 path = './assets/images/'
 shuffle(picLinks);
-ad1.setAttribute("src", path + picLinks[Math.floor(Math.random() * picLinks.length)]);
-ad2.setAttribute("src", path + picLinks[Math.floor(Math.random() * picLinks.length)]);
-ad3.setAttribute("src", path + picLinks[Math.floor(Math.random() * picLinks.length)]);
+ad1.setAttribute("src", path + picLinks[0]);
+ad2.setAttribute("src", path + picLinks[1]);
+ad3.setAttribute("src", path + picLinks[2]);
 function callStories(){
     chooseVariables();
 	
