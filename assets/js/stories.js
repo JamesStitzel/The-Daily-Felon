@@ -615,12 +615,13 @@ ad1 = document.getElementById('ad1');
 ad2 = document.getElementById('ad2');
 ad3 = document.getElementById('ad3');
 picLinks = ['bill.png', 'diabetus.png', 'Durahell.png', 'oil.png', 'pepsi.png', 'robomaid.png', 'T&T&T&T.png', 'vw.png', 'wallblues.png', 'well go f urself.png', 'WSBank.png', 'wsi.png', 'zfinity.png'];
-path = './assets/images/'
+path = './assets/images/';
 shuffle(picLinks);
 ad1.setAttribute("src", path + picLinks[0]);
 ad2.setAttribute("src", path + picLinks[1]);
 ad3.setAttribute("src", path + picLinks[2]);
 function callStories(){
+	inputField.value = localStorage.getItem("input");
     chooseVariables();
 	
 // Each time the tell story function is called the page needs to be refreshed with new content from each of the arrays
@@ -651,9 +652,10 @@ function chooseVariables(){
 	}
 	else{
 		userInput = inputField.value;
-		inputField.value = "";
+		if(inputField.value == "Beau" || inputField.value == "beau"){
+			villainPic.setAttribute("src", path + "Beau.jpg");
+		}
 	}
-    
     R1 = Math.floor(Math.random() * 100 + 1);
     R2 = Math.floor(Math.random() * 100 + 1);
     cityName = cityNamesArray[Math.floor(Math.random() * cityNamesArray.length)];
@@ -682,15 +684,15 @@ function chooseVariables(){
     var articleHeadlines = [							
 
         `Calling All…Superheroes?`,
-        [villainDescriptiveName] + ` Strikes Fear into the Heart of Citizens`,
+        villainDescriptiveName + ` Strikes Fear into the Heart of Citizens`,
         `"Chaos is on the Menu Today" Says One Local Restaurant Owner`,
-        [villainDescriptiveName] + ` Leaves Devastation and Destruction After Going Grocery Shopping`,
-        [superheroName] + ` Promises Justice for Arch Nemesis ` + userInput,
-        `Public Enemy #1, ` + [userInput] + ` Apprehended`,
-        [userInput] + `: Mere Menace or Scourge on Society?`,
-        `Crime of the Century! ` + [userInput] + ` Wreaks Havoc and Ruin on (cityName)`,
-        [cityName] + ` Left in Shock After Receiving Estimate for Destruction Left by ` + [userInput],
-        [userInput] + ` Left Police Bewildered, ` + (superheroName) + ` Asked to Step In`,
+        villainDescriptiveName + ` Leaves Devastation and Destruction After Going Grocery Shopping`,
+        superheroName + ` Promises Justice for Arch Nemesis ` + userInput,
+        `Public Enemy #1, ` + userInput + ` Apprehended`,
+        userInput + `: Mere Menace or Scourge on Society?`,
+        `Crime of the Century! ` + userInput + ` Wreaks Havoc and Ruin on ` + cityName,
+        cityName + ` Left in Shock After Receiving Estimate for Destruction Left by ` + [userInput],
+        userInput + ` Left Police Bewildered, ` + superheroName + ` Asked to Step In`,
         
     ]
 
@@ -743,6 +745,7 @@ function chooseVariables(){
 }
 
 searchBtn.addEventListener("click", function(){
+	localStorage.setItem("input", inputField.value);
 	begin();
 })
 
