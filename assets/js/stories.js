@@ -653,7 +653,7 @@ function chooseVariables(){
 	else{
 		userInput = inputField.value;
 		if(inputField.value == "Beau" || inputField.value == "beau"){
-			villainPic.setAttribute("src", path + "Beau.jpg");
+			villainPic.setAttribute("src", path + "Beau.png");
 		}
 	}
     R1 = Math.floor(Math.random() * 100 + 1);
