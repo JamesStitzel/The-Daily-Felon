@@ -1,5 +1,7 @@
 # ***The Daily Felon***
 
+https://jamesstitzel.github.io/The-Daily-Felon/
+
 The Daily Felon began as a question, *"What am I going to do while sitting at the DMV for 15 minutes?"*. 
 
 Since the very beggining of this project that question has driven us to strive, to perfect, and to even transcend, a 15 minute block of time wherever you are.
