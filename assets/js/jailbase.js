@@ -37,7 +37,7 @@ function begin(){
   villainPic.setAttribute("src", criminal.mugshot);
   criminal.crime = data.records[crimNum].charges[0];
   criminal.location = data.jail.city;
-  callStories();
+  getMarvelAPI();
 })
 .catch(err => {
 	console.error(err);
