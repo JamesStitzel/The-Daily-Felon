@@ -643,13 +643,15 @@ function callStories(){
 }
 
 function chooseVariables(){
+	console.log(inputField.value);
 	superheroName = superHeroName;
     villainDescriptiveName = villainDescriptiveNameArray[Math.floor(Math.random() * villainDescriptiveNameArray.length)];
-	if(inputField.innerHTML == ""){
+	if(inputField.value == ""){
 		userInput = criminal.crimName;
 	}
 	else{
-		userInput = inputField.innerHTML;
+		userInput = inputField.value;
+		inputField.value = "";
 	}
     
     R1 = Math.floor(Math.random() * 100 + 1);
@@ -741,7 +743,7 @@ function chooseVariables(){
 }
 
 searchBtn.addEventListener("click", function(){
-
+	begin();
 })
 
 
