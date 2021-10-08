@@ -30,7 +30,7 @@ function getMarvelAPI() {
         return response.json();
       })
       .then(function (data) {
-        console.log("Updated at 1:38PM");
+        console.log("Updated at 11:38AM");
         console.log(data);
         var superHero = data.data.results[Math.floor(Math.random() * data.data.results.length)];
         superHeroName = superHero.name;
