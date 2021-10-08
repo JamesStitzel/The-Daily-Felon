@@ -23,7 +23,7 @@ Criminals despise them, yellow belly white collar do gooders love gawking at the
 
 The answer was now clear.
 
-## The an
+## The answer
 
 We would create a satirical newspaper that automatically generated silly news stories about random superheros apprehending criminals, with the heros (Using Marvel API) having a caulous disregard for appropriate use of force, and randomly selected mugshots of the alleged perpetrator (Using JailBase API).
 
