@@ -601,6 +601,9 @@ var typeOfMechanicalIssueArray = [
 	`transmission spoiler`
 
 ]
+function shuffle(array) {
+	array.sort(() => Math.random() - 0.5);
+  }
 var headlines;
 headlines = document.getElementById('superTitle');
 inputField = document.getElementById('beau');
@@ -608,6 +611,15 @@ searchBtn = document.getElementById('button');
 superArticle = document.getElementById('superArticle');
 danArticle = document.getElementById('danCook');
 johnArticle = document.getElementById('johnGarage');
+ad1 = document.getElementById('ad1');
+ad2 = document.getElementById('ad2');
+ad3 = document.getElementById('ad3');
+picLinks = ['bill.png', 'diabetus.png', 'durahell.png', 'oil.png', 'pepsi.png', 'robomaid.png', 'T&T&T&T.png', 'vw.png', 'wallblues.png', 'well go f usrself.png', 'WSBank.png', 'wsi.png', 'zfinity.png'];
+path = './assets/images/'
+shuffle(picLinks);
+ad1.setAttribute("src", path + picLinks[0]);
+ad2.setAttribute("src", path + picLinks[1]);
+ad3.setAttribute("src", path + picLinks[2]);
 function callStories(){
     chooseVariables();
 	
@@ -631,13 +643,15 @@ function callStories(){
 }
 
 function chooseVariables(){
+	console.log(inputField.value);
 	superheroName = superHeroName;
     villainDescriptiveName = villainDescriptiveNameArray[Math.floor(Math.random() * villainDescriptiveNameArray.length)];
-	if(inputField.innerHTML == ""){
+	if(inputField.value == ""){
 		userInput = criminal.crimName;
 	}
 	else{
-		userInput = inputField.innerHTML;
+		userInput = inputField.value;
+		inputField.value = "";
 	}
     
     R1 = Math.floor(Math.random() * 100 + 1);
@@ -722,13 +736,14 @@ function chooseVariables(){
     headlines.innerHTML = articleHeadlines[Math.floor(Math.random() * articleHeadlines.length)];
 
 	superArticle.innerHTML = articles[Math.floor(Math.random() * articles.length)];
-	danArticle.innerHTML = dansCookingCorner[Math.floor(Math.random() * dansCookingCorner.length)]
-	johnArticle.innerHTML = jonsGarage[Math.floor(Math.random() * jonsGarage.length)]
+	danArticle.innerHTML = dansCookingCorner[Math.floor(Math.random() * dansCookingCorner.length)];
+	johnArticle.innerHTML = jonsGarage[Math.floor(Math.random() * jonsGarage.length)];
+	
     
 }
 
 searchBtn.addEventListener("click", function(){
-
+	begin();
 })
 
 
