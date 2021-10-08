@@ -282,6 +282,15 @@ p {
   mix-blend-mode: multiply;
   width: 100%;
 }
+.media-2 {
+  -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
+  filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+  mix-blend-mode: multiply;
+  width: 50%;
+  padding: 7px;
+  float: left;
+
+}
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
 @media only all and (max-width: 1300px) {
